@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+   <div class="features">
+       <h1>{{ title }}</h1>
+       <p>Преисполняюсь в познании черт всех так вот Артем блять! Gbcfnm neen всякую чушь мол Генаа аааааа летящая селедка с картошкой землится в недрах космоса</p>
+       <button class="btn btn-warning">На страницу про нас</button>
+
+       {% for el in values %}
+            {% if el == 'hello' %}
+                {% filter upper %}
+                    <p>{{ el }}</p>
+                {% endfilter %}
+            {% endif %}
+       {% endfor %}
+
+       {% for el in obj %}
+            <p>{{ el }}</p>
+       {% endfor %}
+   </div>
+{% endblock %}
