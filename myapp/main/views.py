@@ -5,7 +5,7 @@ def index(request):
     data = {
         'title': 'Главная страница',
         'values': ['Some', 'hello', '123'],
-        'obj': {
+        'objects': {
             'car': 'BMW',
             'age': 18,
             'hobby': 'car'
